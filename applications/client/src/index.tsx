@@ -1,3 +1,4 @@
+import './demo/install';
 import { Global } from '@emotion/react';
 import { customCssVars, globalStyle } from '@redeye/ui-styles';
 import { QueryClientProvider } from '@tanstack/react-query';

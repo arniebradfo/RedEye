@@ -4,45 +4,9 @@
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
-		"moduleResolution": "nodenext",
+		"moduleResolution": "node",
 		"module": "esnext",
 		"target": "esnext",
 		"baseUrl": "."
-	},
-	"exclude": ["applications/redeye-e2e/*", "tmp", "applications/redeye-e2e/cypress.config.js", "node_modules"],
-	"references": [
-		{
-			"path": "applications/client"
-		},
-		{
-			"path": "applications/server"
-		},
-		{
-			"path": "docs/landing-page"
-		},
-		{
-			"path": "packages/graph"
-		},
-		{
-			"path": "packages/migrations"
-		},
-		{
-			"path": "packages/models"
-		},
-		{
-			"path": "packages/ui-styles"
-		},
-		{
-			"path": "parsers/brute-ratel-parser"
-		},
-		{
-			"path": "parsers/cobalt-strike-parser"
-		},
-		{
-			"path": "parsers/parser-core"
-		},
-		{
-			"path": "parsers/sliver-parser"
-		}
-	]
+	}
 }

@@ -28,7 +28,7 @@
 		"noUnusedParameters": false,
 		"noUnusedLocals": false,
 		"noEmit": false,
-		"composite": true,
+		"composite": false,
 		"jsxImportSource": "@emotion/react",
 		"jsx": "react-jsx",
 		"plugins": [
@@ -41,13 +41,5 @@
 			}
 		]
 	},
-	"include": ["src"],
-	"references": [
-		{
-			"path": "../../packages/graph"
-		},
-		{
-			"path": "../../packages/ui-styles"
-		}
-	]
+	"include": ["src"]
 }

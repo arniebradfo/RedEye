@@ -16,30 +16,9 @@ Cypress.Commands.add('loginLocal', (password, user) => {
 });
 
 Cypress.Commands.add('loginAPI', (user = 'cypress') => {
-	const formData = new FormData();
-	formData.append('password', '937038570');
-
-	cy.session(
-		user,
-		() => {
-			cy.request({
-				url: 'http://localhost:4000/api/login',
-				method: 'POST',
-				headers: {
-					'content-type': 'multipart/form-data',
-				},
-				body: formData,
-			}).then(() => {
-				window.localStorage.setItem('user', 'cypress');
-			});
-		},
-		{
-			cacheAcrossSpecs: true,
-		}
-	),
-		cy.visit('http://localhost:3500/#/campaigns/all', {
-			timeout: 80000,
-		});
+	// The demo accepts any password, so logging in is just choosing a username
+	cy.visit('/', { onBeforeLoad: (win) => win.localStorage.setItem('user', user) });
+	cy.visit('/#/campaigns/all', { timeout: 80000 });
 	cy.wait(1000);
 });
 

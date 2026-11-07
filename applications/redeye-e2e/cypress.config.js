@@ -13,10 +13,6 @@ module.exports = defineConfig({
 	failOnStatusCode: false,
 	viewportWidth: 1920,
 	viewportHeight: 1080,
-	reporter: path.join(__dirname, '../../node_modules/cypress-multi-reporters'),
-	reporterOptions: {
-		configFile: path.join(__dirname, 'reporter-config.json'),
-	},
 	e2e: {
 		// eslint-disable-next-line @typescript-eslint/no-unused-vars
 		setupNodeEvents(on, config) {
@@ -26,6 +22,9 @@ module.exports = defineConfig({
 		supportFile: path.join(__dirname, 'src', 'support', 'e2e.js'),
 		excludeSpecPattern: '*.skip.js',
 		defaultCommandTimeout: 15000,
+		// The demo keeps its data in sessionStorage, which Cypress would otherwise clear between tests.
+		// The original server kept uploaded campaigns across tests in a spec, and the specs rely on that.
+		testIsolation: false,
 		trashAssetsBeforeRuns: true,
 		baseUrl: 'http://localhost:3500',
 	},

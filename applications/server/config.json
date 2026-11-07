@@ -1,9 +1,0 @@
-{
-	"$schema": "./config.schema.json",
-	"password": "937038570",
-	"secret": "supertopsecretdonttellanyone",
-	"redTeam": true,
-	"databaseMode": "DEV_PERSIST",
-	"parsers": ["sliver-parser", "cobalt-strike-parser", "brute-ratel-parser"],
-	"production": false
-}

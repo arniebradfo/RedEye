@@ -1,5 +1,5 @@
 import { QueryClient } from '@tanstack/react-query';
-import { createHttpClient } from 'mk-gql';
+import { demoGqlClient } from '@redeye/client/demo';
 import { reaction } from 'mobx';
 import type { ObjectMap } from 'mobx-keystone';
 import { detach, model, Model, modelAction, prop, registerRootStore } from 'mobx-keystone';
@@ -56,9 +56,8 @@ export class AppStore extends Model({
 				this.setAppMeta(value);
 			});
 
-		this.graphqlStore.gqlHttpClient = createHttpClient(`${this.auth.serverUrl}/api/graphql`, {
-			credentials: 'include',
-		});
+		// The demo answers GraphQL in the browser instead of calling the RedEye server
+		this.graphqlStore.gqlHttpClient = demoGqlClient;
 
 		// Get initial list of campaigns
 		this.graphqlStore.queryCampaigns({}, campaignsQuery);

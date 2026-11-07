@@ -91,3 +91,9 @@ beforeEach(() => {
 	// });
 	cy.loginAPI();
 });
+
+// Specs in the blueteam folder used to run against a server started with SERVER_BLUE_TEAM=true.
+// The demo reads that mode from sessionStorage instead.
+Cypress.on('window:before:load', (win) => {
+	if (Cypress.spec.relative.includes('/blueteam/')) win.sessionStorage.setItem('redeye-demo-blue-team', 'true');
+});

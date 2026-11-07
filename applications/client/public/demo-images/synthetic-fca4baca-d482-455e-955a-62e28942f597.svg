@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1280" height="800" fill="#1d4e7a"/>
+<rect x="0" y="760" width="1280" height="40" fill="#202020"/>
+<rect x="12" y="768" width="24" height="24" fill="#3a96dd"/>
+<text x="1180" y="786" fill="#fff" font-size="13">10:57</text>
+<rect x="150" y="90" width="980" height="600" fill="#f3f3f3" stroke="#999"/>
+<rect x="150" y="90" width="980" height="36" fill="#ffffff"/>
+<text x="166" y="114" fill="#222" font-size="15">Active Directory Users and Computers</text>
+<text x="180" y="170" fill="#333" font-size="16">halcyon.lan  ›  Users</text>
+<text x="180" y="200" fill="#333" font-size="16">Administrator          User      Built-in account for administering the domain</text>
+<text x="180" y="230" fill="#333" font-size="16">adm.kowalski           User      Domain Admins</text>
+<text x="180" y="260" fill="#333" font-size="16">krbtgt                 User      Key Distribution Center Service Account</text>
+<text x="180" y="290" fill="#333" font-size="16">svc-backup             User      Domain Admins</text>
+<text x="1110" y="114" fill="#666" font-size="16">✕</text>
+</svg>

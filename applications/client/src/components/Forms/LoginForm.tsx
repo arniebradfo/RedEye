@@ -3,6 +3,7 @@ import { ArrowRight16, Password16, Warning20 } from '@carbon/icons-react';
 import { css } from '@emotion/react';
 import { CarbonIcon, UsernameInput } from '@redeye/client/components';
 import { useStore } from '@redeye/client/store';
+import { Txt } from '@redeye/ui-styles';
 import { routes } from '@redeye/client/store/routing/router';
 import { Views } from '@redeye/client/types';
 import { useQuery } from '@tanstack/react-query';
@@ -16,7 +17,7 @@ export const LoginForm = observer<LoginFormProps>(({ ...props }) => {
 	const store = useStore();
 	const state = createState({
 		username: store.auth.userName || '',
-		password: '',
+		password: 'demo', // the demo accepts any password
 		passwordFocus: false,
 		loading: false,
 		errorMessage: '',
@@ -108,6 +109,11 @@ export const LoginForm = observer<LoginFormProps>(({ ...props }) => {
 					children={state.errorMessage}
 				/>
 			)}
+			<Callout css={otherSpacingLooseStyle} icon={null}>
+				<Txt small muted>
+					Demo: any password and username work. Data is fictional and your changes last until you close this tab.
+				</Txt>
+			</Callout>
 			<Button
 				cy-test="login-btn"
 				text="Login"

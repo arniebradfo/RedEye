@@ -1,8 +1,0 @@
-{
-	"name": "@redeye/e2e",
-	"version": "1.0.0",
-	"dependencies": {
-		"@redeye/client": "workspace:*",
-		"@redeye/server": "workspace:*"
-	}
-}

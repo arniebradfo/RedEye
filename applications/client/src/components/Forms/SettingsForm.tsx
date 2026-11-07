@@ -2,6 +2,7 @@ import { Classes, FormGroup, Switch } from '@blueprintjs/core';
 import { TimezoneSelect } from '@blueprintjs/datetime';
 import { css } from '@emotion/react';
 import { SortDirection, useStore } from '@redeye/client/store';
+import { DemoSettings } from '@redeye/client/demo/DemoSettings';
 import { sortOptions } from '@redeye/client/views';
 import { Txt, unRedactedFontClassName } from '@redeye/ui-styles';
 import { observer } from 'mobx-react-lite';
@@ -98,6 +99,7 @@ export const SettingsForm = observer<SettingsFormProps>(({ ...props }) => {
 					</span>
 				}
 			/>
+			<DemoSettings />
 		</form>
 	);
 });
