@@ -31,6 +31,8 @@ export const HelpOverlay: FC<HelpOverlayProps> = ({ ...props }) => (
 			<Txt cy-test="about-modal-links" tagName="p">
 				<ExternalLink {...githubLink} />
 				<Spacer>|</Spacer>
+				<ExternalLink {...demoGithubLink} />
+				<Spacer>|</Spacer>
 				<ExternalLink {...cobaltStrikeLink} />
 			</Txt>
 
@@ -60,7 +62,11 @@ type LinkInfo = {
 };
 const githubLink: LinkInfo = {
 	href: 'https://github.com/cisagov/redeye',
-	children: 'Redeye GitHub Repo',
+	children: 'Original CISA Repo',
+};
+const demoGithubLink: LinkInfo = {
+	href: 'https://github.com/arniebradfo/RedEye',
+	children: 'Demo Repo',
 };
 const licenseLink: LinkInfo = {
 	href: `${githubLink.href}/blob/develop/LICENSE`,
