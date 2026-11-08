@@ -67,3 +67,16 @@ The parser on `develop` needed two small fixes to run on these logs. Its `--fold
 ## License
 
 RedEye was developed by PNNL for CISA. See [LICENSE](LICENSE) and [DISCLAIMER](DISCLAIMER).
+
+## Credits
+
+- Austin Golding  [@GoldingAustin](https://github.com/GoldingAustin) - PM, Full Stack Engineering
+- Devan Farrell  [@devanfarrell](https://github.com/devanfarrell) - Full Stack Engineering
+- James Bradford [@arniebradfo](https://github.com/arniebradfo) - UX Design & Frontend Engineering
+- Sebastian Ang  [@sang2925](https://github.com/sang2925) - Testing, Validation, CICD
+- Huiqing Li [@sharplessHQ](https://github.com/sharplessHQ) - Frontend Engineering
+- Ryan Rabello  [@ryanrabello](https://github.com/ryanrabello) - Frontend Engineering
+- Dan Best  [@raptorsqueak](https://github.com/raptorsqueak) - Cyber security SME
+- Shawn Hampton  [@ShawnHampton](https://github.com/ShawnHampton) - Principal Investigator
+- Pacific Northwest National Laboratory [@pnnl](https://github.com/pnnl) - Lab
+- Cyber Security and Infrastructure Security Agency [@cisagov](https://github.com/cisagov) - Sponsor
