@@ -111,7 +111,7 @@ export const LoginForm = observer<LoginFormProps>(({ ...props }) => {
 			)}
 			<Callout css={otherSpacingLooseStyle} icon={null}>
 				<Txt small muted>
-					Demo: any password and username work. Data is fictional and your changes last until you close this tab.
+					Demo: any password and username work. Data is fictional or public lab logs, and your changes last until you close this tab.
 				</Txt>
 			</Callout>
 			<Button

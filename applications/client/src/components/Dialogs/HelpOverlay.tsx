@@ -28,6 +28,12 @@ export const HelpOverlay: FC<HelpOverlayProps> = ({ ...props }) => (
 				<ExternalLink regular {...cisaLink} />.
 			</Txt>
 
+			<Txt cy-test="about-modal-data-credit" tagName="p" muted small>
+				The &ldquo;Outflank RedELK Lab&rdquo; campaign uses real Cobalt Strike logs from the{' '}
+				<ExternalLink muted {...redelkLink} /> demo lab by <ExternalLink muted {...outflankLink} />, used under its BSD-3
+				license. All other demo data is fictional.
+			</Txt>
+
 			<Txt cy-test="about-modal-links" tagName="p">
 				<ExternalLink {...githubLink} />
 				<Spacer>|</Spacer>
@@ -75,6 +81,14 @@ const licenseLink: LinkInfo = {
 const cobaltStrikeLink: LinkInfo = {
 	href: 'https://www.cobaltstrike.com',
 	children: 'Cobalt Strike',
+};
+const redelkLink: LinkInfo = {
+	href: 'https://github.com/outflanknl/RedELK/tree/master/example-data-and-configs/ExampleData',
+	children: 'RedELK',
+};
+const outflankLink: LinkInfo = {
+	href: 'https://www.outflank.nl',
+	children: 'Outflank',
 };
 const pnnlLink: LinkInfo = {
 	href: 'https://www.pnnl.gov/',

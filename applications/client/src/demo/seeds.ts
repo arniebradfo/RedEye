@@ -1,11 +1,13 @@
 import type { CampaignRow, Seed } from './db';
 import gt from './seeds/gt.json';
+import redelk from './seeds/redelk.json';
 import smalldata from './seeds/smalldata.json';
 import synthetic from './seeds/synthetic.json';
 
 /** Read-only datasets the demo campaigns are built from */
 export const seeds: Record<string, Seed> = {
 	synthetic: synthetic as unknown as Seed,
+	redelk: redelk as unknown as Seed,
 	gt: gt as unknown as Seed,
 	smalldata: smalldata as unknown as Seed,
 };
@@ -18,6 +20,15 @@ export const defaultCampaigns: CampaignRow[] = [
 		seedId: 'synthetic',
 		creatorId: 'raven',
 		lastOpenedById: 'raven',
+		parserName: 'cobalt-strike-parser',
+	},
+	{
+		// Real Cobalt Strike logs from Outflank's RedELK demo lab (BSD-3-Clause), parsed with the original RedEye parser
+		id: 'demo-redelk',
+		name: 'Outflank RedELK Lab',
+		seedId: 'redelk',
+		creatorId: 'MarcS',
+		lastOpenedById: 'MarcS',
 		parserName: 'cobalt-strike-parser',
 	},
 	{

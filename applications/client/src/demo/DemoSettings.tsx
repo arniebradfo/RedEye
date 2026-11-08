@@ -12,7 +12,7 @@ export const DemoSettings = () => {
 			label="Demo"
 			helperText={
 				<Txt small muted>
-					This demo runs entirely in your browser on fictional data. Changes last until you close this tab.
+					This demo runs entirely in your browser on fictional data and public lab logs (see Help). Changes last until you close this tab.
 				</Txt>
 			}
 		>
